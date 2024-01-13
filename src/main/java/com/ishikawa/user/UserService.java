@@ -20,4 +20,10 @@ public class UserService {
         }
 
     }
+
+    public User insert(String name, String email) {
+        User user = new User(null, name, email);
+        userMapper.insert(user);
+        return user;
+    }
 }

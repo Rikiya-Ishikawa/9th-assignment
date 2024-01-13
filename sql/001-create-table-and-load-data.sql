@@ -1,9 +1,9 @@
 DROP TABLE IF EXISTS users;
 
 CREATE TABLE users (
-  id int unsigned AUTO_INCREMENT,
-  name VARCHAR(100) NOT NULL,
-  email VARCHAR(100) NOT NULL,
+  id int unsigned AUTO_INCREMENT UNIQUE,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
   PRIMARY KEY(id)
 );
 
